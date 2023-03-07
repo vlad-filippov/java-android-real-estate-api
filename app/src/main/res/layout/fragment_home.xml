@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothamssm_bold"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:paddingTop="20dp"
+        android:text="DTT REAL ESTATE"
+        android:textColor="#CC000000"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:closeIcon="@null"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search for home" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <include
+        android:id="@+id/noResultsFound"
+        layout="@layout/no_results_found" />
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#F60808"
+    android:paddingHorizontal="20dp"
+    tools:context=".fragments.InfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothamssm_bold"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:text="ABOUT"
+            android:textColor="#CC000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et orci in justo iaculis cursus eu eu lectus. Etiam sed dictum sapien. Sed in est risus. Aliquam sit amet lorem nec ipsum vestibulum blandit. Duis in sem metus. Donec vitae diam augue. In hac habitasse platea dictumst. Aenean vitae ex lacus. Donec tempus leo ac dictum semper.  Vestibulum non tellus augue. Etiam gravida suscipit nisl elementum bibendum. Cras eleifend tempor odio, et lobortis est dictum eget. Nullam sodales egestas eros, a laoreet nibh vehicula vel. Sed arcu mi, facilisis non neque in, pulvinar aliquet erat. Sed quis dolor justo.  Cras eleifend tempor odio, et lobortis est dictum eget. Nullam sodales egestas eros, a laoreet nibh vehicula vel. Sed arcu mi, facilisis non neque in, pulvinar aliquet erat. Sed quis dolor justo.  Cras eleifend tempor odio, et lobortis est dictum eget. Nullam sodales egestas eros, a laoreet nibh vehicula vel. Sed arcu mi, facilisis non neque in, pulvinar aliquet erat. Sed quis dolor justo.  Cras eleifend tempor odio, et lobortis est dictum eget."
+            android:textSize="12sp"
+            android:textColor="#CC000000"
+            android:fontFamily="@font/gothamssm_book"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Design and Development"
+            android:textSize="16sp"
+            android:fontFamily="@font/gothamssm_bold"
+            android:textColor="#CC000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#E65541">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_dtt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="-10dp"
+                    android:fontFamily="@font/gothamssm_bold"
+                    android:text="DTT"
+                    android:textColor="#CC000000"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="APPS WEB GAMES"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/gothamssm_medium"
+                    android:textColor="#66000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="by DTT"
+                    android:fontFamily="@font/gothamssm_medium"
+                    android:textSize="16sp"
+                    android:textColor="#CC000000"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:text="d-tt.nl"
+                    android:fontFamily="@font/gothamssm_light"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

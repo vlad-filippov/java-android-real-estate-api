@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00FF00"
+    tools:context=".HouseDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="-20dp">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/house4" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="back"
+            android:drawableTop="@drawable/ic_back" />
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CustomCardViewStyle"
+        app:cardBackgroundColor="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gothamssm_bold"
+                        android:text="$"
+                        android:textColor="#CC000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewHomePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gothamssm_bold"
+                        android:paddingRight="5dp"
+                        android:text="45,000"
+                        android:textColor="#CC000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/ic_bed" />
+
+                <TextView
+                    android:id="@+id/textViewBedRooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothamssm_light"
+                    android:paddingRight="15dp"
+                    android:text="1"
+                    android:textColor="#66000000"
+                    android:textSize="8sp" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/ic_bath" />
+
+                <TextView
+                    android:id="@+id/textViewBathRooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothamssm_light"
+                    android:paddingRight="15dp"
+                    android:text="1"
+                    android:textColor="#66000000"
+                    android:textSize="8sp" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/ic_layers" />
+
+                <TextView
+                    android:id="@+id/textViewRoomSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothamssm_light"
+                    android:paddingRight="10dp"
+                    android:text="46"
+                    android:textColor="#66000000"
+                    android:textSize="8sp" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/textViewDistanceFromYourLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothamssm_light"
+                    android:text="54,6 km"
+                    android:textColor="#66000000"
+                    android:textSize="8sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:fontFamily="@font/gothamssm_bold"
+                    android:text="DESCRIPTION"
+                    android:textColor="#CC000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothamssm_book"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et orci in justo iaculis cursus eu eu lectus. Etiam sed dictum sapien. Sed in est risus. Aliquam sit amet lorem nec ipsum vestibulum blandit. Duis in sem metus. Donec vitae diam augue. In hac habitasse platea dictumst. Aenean vitae ex lacus. Donec tempus leo ac dictum semper.  Vestibulum non tellus augue. Etiam gravida suscipit nisl elementum bibendum. Cras eleifend tempor odio, et lobortis est dictum eget. Nullam sodales egestas eros, a laoreet nibh vehicula vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et orci in justo iaculis cursus eu eu lectus. Etiam sed dictum sapien. Cras eleifend tempor odio, et lobortis est dictum eget. Nullam sodales egestas eros, a laoreet nibh vehicula vel. Nullam sodales egestas eros, a laoreet nibh vehicula vel."
+                    android:textColor="#CC000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothamssm_bold"
+                    android:text="LOCATION"
+                    android:textColor="#CC000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black">
+
+                <WebView
+                    android:id="@+id/webViewMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
